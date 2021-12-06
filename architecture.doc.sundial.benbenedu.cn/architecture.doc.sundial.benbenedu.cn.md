@@ -1,13 +1,15 @@
-# <div style="text-align:center">**Sundial测评中台架构及设计**</div>
+<h1 style="text-align: center; color: olivedrab">Sundial测评中台架构及设计</h1>
 
-- [X] Good
-- [ ] Bad
-- [X] Normal
+[comment]: <> (- [X] Good)
 
-## 1. 业务逻辑
+[comment]: <> (- [ ] Bad)
 
-## 2. 实现
+[comment]: <> (- [X] Normal)
 
-## 3. 进程
+[comment]: <> (## <div style>1. 业务逻辑</div>)
 
-## 4. 部署
+[comment]: <> (## 2. 实现)
+
+[comment]: <> (## 3. 进程)
+
+[comment]: <> (## 4. 部署)
