@@ -83,7 +83,11 @@ Sundial测评中台支撑测评相关的三类业务活动
 
 > ### *1.3 领域模型*
 
+下图描述了内容创作及测评创建活动对应的领域对象、参与角色以及相互之间的关系。
+
 ![part-1.model.domain.sundial.benbenedu.cn](./resources/part-1.model.domain.sundial.benbenedu.cn.png)
+
+下图描述了测评实施及结果反馈活动对应的领域对象及相互间的关系。
 
 ![part-2.model.domain.sundial.benbenedu.cn](./resources/part-2.model.domain.sundial.benbenedu.cn.png)
 
