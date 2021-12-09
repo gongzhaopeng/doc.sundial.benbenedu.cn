@@ -93,6 +93,8 @@ Sundial测评中台支撑测评相关的三类业务活动
 
 > ## *2. 实现*
 
+![implementation-view.sundial.benbenedu.cn](./resources/implementation-view.sundial.benbenedu.cn.png)
+
 > ## *3. 进程视图*
 
 > ## *4. 部署视图*
