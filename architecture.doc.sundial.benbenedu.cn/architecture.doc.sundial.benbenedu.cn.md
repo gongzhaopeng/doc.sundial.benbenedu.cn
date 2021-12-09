@@ -93,7 +93,70 @@ Sundial测评中台支撑测评相关的三类业务活动
 
 > ## *2. 实现*
 
+Sundial测评中台采用微服务模式，基于Spring Cloud及Spring Boot框架提供的能力进行开发。  
+选用Mongo DB作为主要的数据库组件，Redis作为缓存组件，Kafka作为消息中间件，Aliyun OSS作为公开的资源存储服务。  
+各个微服务项目、开发框架及基础设施组件的结构如下图所示。
+
 ![implementation-view.sundial.benbenedu.cn](./resources/implementation-view.sundial.benbenedu.cn.png)
+
+以下按分类对每个微服务项目做简要说明。
+
+> ### *2.1 基础服务*
+
+- ***sundial-config | 配置中心***  
+  为所有其它微服务提供统一的、集中化的配置服务。
+
+
+- ***sundial-registry | 注册中心***  
+  提供微服务注册、查找等基础服务能力。
+
+
+- ***sundial-gateway | 网关***  
+  Sundial测评中台对外的统一的访问入口。
+
+> ### *2.2 账户及授权*
+
+- ***sundial-accountcenter | 账户中心***  
+  管理账户及相关信息，如账户注册，账户创建、修改等等。
+
+
+- ***sundial-xauth | 授权中心***  
+  认证、授权及权限控制等。
+
+> ### *2.3 核心测评业务*
+
+- ***sundial-resource***  
+  上传、管理资源，如图片、音频、视频等。
+
+
+- ***sundial-question***  
+  创建题目，题库管理。
+
+
+- ***sundial-exampaper***  
+  创建、管理试卷模子。
+
+
+- ***sundial-examconfig***  
+  创建、管理考试/考试链。  
+
+
+- ***sundial-delivery***  
+  将题目、试卷模子、考试/考试链等业务对象引用的资源递送至公开的资源服务(Aliyun OSS)，使其外部可见。  
+  维护、管理相关的递送任务。  
+
+
+- ***sundial-examstation | 考试站***  
+  载入考试/考试链及相关的试卷模子等。  
+  创建、管理测评实施相关的测评码、白名单等参测凭证。  
+  控制准考证的申请、相关参测凭证的核销，分发试卷，接收答卷的提交。  
+  是驱动测评过程实际执行的核心服务。   
+
+
+- ***sundial-examstation | 考试站***
+
+
+> ### *2.4 其它业务*
 
 > ## *3. 进程视图*
 
